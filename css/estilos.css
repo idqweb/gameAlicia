@@ -1,0 +1,129 @@
+.titulologo{
+		width:657px;
+		height:270px;
+		background-image: url('../titulo.png');
+  		background-repeat: no-repeat;
+}
+
+
+.mapa tr td{
+             width:80px;
+             height:80px;
+             padding: 0px;
+        }
+.mapa{
+        display:-moz-stack;
+		border: 1px solid;
+        }
+#paneljuego{
+	display:-moz-groupbox;
+	
+}
+
+#numeroVidas{
+	color: red;
+    display: inline;
+    font-size: 450%;
+    padding: 16px;
+	font-weight: bold;
+}
+
+
+#areaPLay{
+	 border: silver 75px solid;  
+  border-image-source: url("../images/marco.png");
+  border-image-slice: 75;
+  text-align: justify;
+
+}
+
+
+
+
+
+.imgObjeto{
+	background-color: white;
+}
+.alicia{
+		
+		background-image: url('../images/alicia.png');
+		/*background-size: 40px 40px; cambia tamaño de la imagen de background*/
+  		background-repeat: no-repeat;
+		border: none;
+}
+
+.oruga{
+		
+		background-image: url('../images/oruga.png');
+  		background-repeat: no-repeat;
+		border: none;
+
+}
+.soldado{
+		
+		background-image: url('../images/soldado.png');
+  		background-repeat: no-repeat;
+		border: none;
+}
+
+
+
+.piedra{
+		
+		background-image: url('../images/roca.png');
+  		background-repeat: no-repeat;
+		border: none;
+}
+.arbol{
+		
+		background-image: url('../images/arbol.png');
+  		background-repeat: no-repeat;
+		border: none;
+}
+.gato{
+		
+		background-image: url('../images/gato.png');
+  		background-repeat: no-repeat;
+		border: none;
+}
+
+.aliciaOruga{
+		
+		background-image: url('../images/aliciaOruga.png');
+  		background-repeat: no-repeat;
+		border: none;
+
+}
+.aliciaGato{
+		background-image: url('../images/aliciaGato.png');
+  		background-repeat: no-repeat;
+		border: none;
+
+}
+
+#objetosOut {
+		
+		
+	
+}
+
+.aliciaOrugaQuestions{
+ 	background: aliceblue none repeat scroll 0 0;
+    border-radius: 8px;
+    color: #333;
+    display: inline-flex;
+    height: 50%;
+    left: 25%;
+    overflow: auto;
+    padding: 16px;
+    position: absolute;
+    top: 65%;
+    width: 34%;
+    z-index: 1000;
+}
+
+
+
+
+
+
