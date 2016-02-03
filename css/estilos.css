@@ -7,8 +7,8 @@
 
 
 .mapa tr td{
-             width:80px;
-             height:80px;
+             width:60px;
+             height:60px;
              padding: 0px;
         }
 .mapa{
@@ -19,6 +19,15 @@
 	display:-moz-groupbox;
 	
 }
+#vidas{
+	display:inline-flex;	
+}
+
+#vidas img{
+	width:45%;
+	height:45%;
+	
+}
 
 #numeroVidas{
 	color: red;
@@ -27,13 +36,17 @@
     padding: 16px;
 	font-weight: bold;
 }
-
+#movimientos{
+	float:left;
+	
+}
 
 #areaPLay{
 	 border: silver 75px solid;  
   border-image-source: url("../images/marco.png");
   border-image-slice: 75;
-  text-align: justify;
+  text-align: center;
+	margin:2%;
 
 }
 
@@ -41,13 +54,13 @@
 
 
 
-.imgObjeto{
-	background-color: white;
+.camino{
+	background-color: transparent;
 }
 .alicia{
 		
 		background-image: url('../images/alicia.png');
-		/*background-size: 40px 40px; cambia tamaño de la imagen de background*/
+		background-size: 60px 60px;/*cambia tamaño de la imagen de background*/
   		background-repeat: no-repeat;
 		border: none;
 }
@@ -55,6 +68,7 @@
 .oruga{
 		
 		background-image: url('../images/oruga.png');
+		background-size: 60px 60px;
   		background-repeat: no-repeat;
 		border: none;
 
@@ -62,6 +76,7 @@
 .soldado{
 		
 		background-image: url('../images/soldado.png');
+		background-size: 60px 60px;
   		background-repeat: no-repeat;
 		border: none;
 }
@@ -71,18 +86,21 @@
 .piedra{
 		
 		background-image: url('../images/roca.png');
+		background-size: 60px 60px;
   		background-repeat: no-repeat;
 		border: none;
 }
 .arbol{
 		
 		background-image: url('../images/arbol.png');
+		background-size: 60px 60px;
   		background-repeat: no-repeat;
 		border: none;
 }
 .gato{
 		
 		background-image: url('../images/gato.png');
+		background-size: 60px 60px;
   		background-repeat: no-repeat;
 		border: none;
 }
@@ -90,7 +108,7 @@
 .aliciaOruga{
 		
 		background-image: url('../images/aliciaOruga.png');
-  		background-repeat: no-repeat;
+		background-repeat: no-repeat;
 		border: none;
 
 }
@@ -111,16 +129,36 @@
  	background: aliceblue none repeat scroll 0 0;
     border-radius: 8px;
     color: #333;
-    display: inline-flex;
-    height: 50%;
     left: 25%;
     overflow: auto;
     padding: 16px;
     position: absolute;
     top: 65%;
-    width: 34%;
     z-index: 1000;
 }
+
+
+.preguntas{
+	float: left;
+	display:block;
+	
+}
+.botonesRespuesta{
+	clear:both;	
+}
+
+
+.aliciaOrugaQuestions button {
+	
+	margin:10px 10px 10px 60px;
+	
+}
+
+
+
+
+
+
 
 
 
