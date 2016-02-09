@@ -1,3 +1,13 @@
+
+body {
+	
+	/* quitar las barras de scroll*/
+	 overflow-x: hidden;
+	 overflow-y: hidden;
+}
+
+
+
 .titulologo{
 		width:657px;
 		height:270px;
@@ -15,12 +25,33 @@
         display:-moz-stack;
 		border: 1px solid;
         }
+
+
+#panelInfo{
+	margin-left: 10%;
+    margin-right: 10%;
+	
+}
+
+
+#panelInfo #controlZoom{
+	display: -moz-groupbox;
+    margin: 0 0 0 5%;
+}
+#panelInfo #help{
+	display:block;
+}
+
+
+
 #paneljuego{
-	display:-moz-groupbox;
+	margin:1%;
 	
 }
 #vidas{
-	display:inline-flex;	
+	display:inline-flex;
+	margin-left:15%;
+	padding-top:5%;
 }
 
 #vidas img{
@@ -36,26 +67,30 @@
     padding: 16px;
 	font-weight: bold;
 }
-#movimientos{
-	float:left;
+#panelMovimientos{
+	float:right;
+	
 	
 }
 
 #areaPLay{
-	 border: silver 75px solid;  
-  border-image-source: url("../images/marco.png");
-  border-image-slice: 75;
-  text-align: center;
+	border: silver 75px solid;  
+  	border-image-source: url("../images/marco.png");
+  	border-image-slice: 75;
+  	text-align: center;
 	margin:2%;
 
 }
 
 
 
-
+/* Las clases de los Objetos */
 
 .camino{
-	background-color: transparent;
+	/* hay que mirar si vale transparent*/
+	background-image: url('../images/fondo.png');
+	background-size: 60px 60px;
+	border: none;
 }
 .alicia{
 		
@@ -104,26 +139,35 @@
   		background-repeat: no-repeat;
 		border: none;
 }
+.espejo{
+		background-image: url('../images/espejo.jpg');
+		background-size: 60px 60px;
+  		background-repeat: no-repeat;
+		border: none;
+
+}
+
 
 .aliciaOruga{
 		
 		background-image: url('../images/aliciaOruga.png');
+		background-size: 60px 60px;
 		background-repeat: no-repeat;
 		border: none;
 
 }
 .aliciaGato{
 		background-image: url('../images/aliciaGato.png');
+		background-size: 60px 60px;
   		background-repeat: no-repeat;
 		border: none;
 
 }
 
-#objetosOut {
-		
-		
-	
-}
+
+
+
+
 
 .aliciaOrugaQuestions{
  	background: aliceblue none repeat scroll 0 0;
@@ -131,9 +175,9 @@
     color: #333;
     left: 25%;
     overflow: auto;
-    padding: 16px;
+    padding: 20px;
     position: absolute;
-    top: 65%;
+    top: 62%;
     z-index: 1000;
 }
 
@@ -155,7 +199,17 @@
 }
 
 
-
+.finalJuego{
+	background: aliceblue none repeat scroll 0 0;
+    border-radius: 8px;
+    color: #333;
+    left: 50%;
+    overflow: auto;
+    padding: 20px;
+    position: absolute;
+    top: 52%;
+    z-index: 1000;
+}
 
 
 

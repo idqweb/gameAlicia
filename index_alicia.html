@@ -14,8 +14,9 @@
 	<!-- el que viene compilado -->
 		<script src="./js/bootstrap.min.js" ></script>	
 	<!-- el del juego -->
-	<script src="./js/mijuego.js" ></script>
-	<script src="./js/preguntas.js" ></script>
+	<script src="./js/game/inicioGame.js" ></script>
+	<script src="./js/game/dinamicaGame.js" ></script>
+	<script src="./js/game/preguntas.js" ></script>
 	
 		
 	
@@ -27,23 +28,21 @@
 	<div class="container-full">
 	<div class="row">
 	
-		<!--
-	<a href="./index_alicia.html"><div  class="titulologo"></div></a>
-	-->
-	<button id="b-reduce" onclick="reduce()"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span>Zoom</button>
-	<button id="b-aumenta"  onclick="aumenta()"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>Zoom</button>
+		<div id="panelInfo">
+			<div id="controlZoom" class="span2">
+				<button id="b-reduce" onclick="reduce()"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span>Zoom</button>
+				<button id="b-aumenta"  onclick="aumenta()"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>Zoom</button>
+				<button id="help" class="btn btn-info"	>Instrucciones</button>
+			</div>	
 			<div id="vidas">
 				<img src="./images/corazon.png" alt="corazon"/>
 				<div id="numeroVidas"></div>
 			</div>
-			Movimientos posibles
-			<div id="movimientos"></div>
-	<div id="areaPLay">
 		
-		<div class="mapa" id="tablero" name="tablero"></div>
-		<div id="paneljuego">
-			
-			
+			<div id="panelMovimientos">
+				Movimientos posibles
+				<div id="movimientos"></div>
+			</div>
 			<div id="objetosOut">
 				
 				<div id="whereIsAlicia" class=""></div>
@@ -52,13 +51,23 @@
 				
 
 			</div>
+		</div>
+		
+		
+	<div id="areaPLay">
+		
+		<div class="mapa" id="tablero" name="tablero"></div>
+		
+			
+			
+			
 			
 	</div>
 		
 		
 		<div id="preguntasConOruga"></div>
 			
-	</div>
+	
 	
 	
 		
