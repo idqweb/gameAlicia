@@ -1,0 +1,177 @@
+
+body {
+
+	background-image: url('../images/alicia.png');
+	background-repeat:repeat;
+		border: none;
+}
+
+
+
+.titulologo{
+		width:657px;
+		height:270px;
+		background-image: url('../titulo.png');
+  		background-repeat: no-repeat;
+}
+
+
+.mapa tr td{
+             width:60px;
+             height:60px;
+             padding: 0px;
+        }
+.mapa{
+        display:-moz-stack;
+		border: 1px solid;
+        }
+#paneljuego{
+	display:-moz-groupbox;
+	
+}
+#vidas{
+	display:inline-flex;	
+}
+
+#vidas img{
+	width:45%;
+	height:45%;
+	
+}
+
+#numeroVidas{
+	color: red;
+    display: inline;
+    font-size: 450%;
+    padding: 16px;
+	font-weight: bold;
+}
+#movimientos{
+	float:left;
+	
+}
+
+#areaPLay{
+	 border: silver 75px solid;  
+  border-image-source: url("../images/marco.png");
+  border-image-slice: 75;
+  text-align: center;
+	margin:2%;
+
+}
+
+
+
+
+
+.camino{
+	background-color: transparent;
+}
+.alicia{
+		
+		background-image: url('../images/alicia.png');
+		background-size: 60px 60px;/*cambia tamaño de la imagen de background*/
+  		background-repeat: no-repeat;
+		border: none;
+}
+
+.oruga{
+		
+		background-image: url('../images/oruga.png');
+		background-size: 60px 60px;
+  		background-repeat: no-repeat;
+		border: none;
+
+}
+.soldado{
+		
+		background-image: url('../images/soldado.png');
+		background-size: 60px 60px;
+  		background-repeat: no-repeat;
+		border: none;
+}
+
+
+
+.piedra{
+		
+		background-image: url('../images/roca.png');
+		background-size: 60px 60px;
+  		background-repeat: no-repeat;
+		border: none;
+}
+.arbol{
+		
+		background-image: url('../images/arbol.png');
+		background-size: 60px 60px;
+  		background-repeat: no-repeat;
+		border: none;
+}
+.gato{
+		
+		background-image: url('../images/gato.png');
+		background-size: 60px 60px;
+  		background-repeat: no-repeat;
+		border: none;
+}
+
+.aliciaOruga{
+		
+		background-image: url('../images/aliciaOruga.png');
+		background-repeat: no-repeat;
+		border: none;
+
+}
+.aliciaGato{
+		background-image: url('../images/aliciaGato.png');
+  		background-repeat: no-repeat;
+		border: none;
+
+}
+
+#objetosOut {
+		
+		
+	
+}
+
+.aliciaOrugaQuestions{
+ 	background: aliceblue none repeat scroll 0 0;
+    border-radius: 8px;
+    color: #333;
+    left: 25%;
+    overflow: auto;
+    padding: 16px;
+    position: absolute;
+    top: 65%;
+    z-index: 1000;
+}
+
+
+.preguntas{
+	float: left;
+	display:block;
+	
+}
+.botonesRespuesta{
+	clear:both;	
+}
+
+
+.aliciaOrugaQuestions button {
+	
+	margin:10px 10px 10px 60px;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
