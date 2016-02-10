@@ -212,9 +212,18 @@ body {
 }
 
 
+#imgfinalGame{
+		display: block;
+   		margin: 0;
+    	text-align: center;
+}
 
-
-
+#imgfinalGame a{
+	margin-top: 2%;
+    display: table;
+    margin-left: 45%;
+	
+}
 
 
 

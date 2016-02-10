@@ -2,17 +2,28 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Carga del juego</title>
+	<title>Juego de Alicia</title>
+	<!-- Los estilos css de Bootstrap -->
+		<link rel="stylesheet" href="./css/bootstrap.css"/>
+	<!-- Mis estilos css PERSONALIZADOS -->
+		<link rel="stylesheet" href="./css/estilos.css"/>
+	
+	<!-- carga de javascripts -->
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    	<script src="./js/jquery-2.1.4.min.js"></script>
+	<!-- el que viene compilado -->
+		<script src="./js/bootstrap.min.js" ></script>	
+	<!-- el del juego -->
 
 </head>
 <body >
-	<script src="./js/game/inicioGame.js" ></script>
+	
 <script>
- 	ventanaJuegoAlicia = window.open("./index_alicia.html","Juego Alicia","directories=no, location=no, menubar=no, scrollbars=no, statusbar=no, tittlebar=no, width=1124, height=850");
-
+ 	ventanaJuegoAlicia = window.open("./juego-alicia.html","Juego Alicia","directories=no, location=no, menubar=no, scrollbars=no, statusbar=no, tittlebar=no, width=1124, height=950");
+	
 </script>
 
-	
+	<div id="imgfinalGame"></div>
 	
 </body>
 </html>

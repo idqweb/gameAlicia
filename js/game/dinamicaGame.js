@@ -547,13 +547,16 @@ function finalGame(){
 		nuevaCapaFinal.setAttribute("class","finalJuego");
 		var ventanaFinal ="<div class='preguntas'>";
 		ventanaFinal += "<h3>GAME OVER</h3>"
-		
 		ventanaFinal += "<br/>";
-		ventanaFinal += "<button onclick='volverJugar()' class='btn btn-primary btn-sm'>VOLVER A JUGAR</button>";
-		ventanaFinal += "<button onclick='cerrarJuegoAlicia ()' class='btn btn-primary btn-sm'>DEJAR JUEGO</button>";
+		ventanaFinal += "<button onclick='volverJugar();' class='btn btn-primary btn-sm'>VOLVER A JUGAR</button>";
+		ventanaFinal += "<button onclick='cerrarJuegoAlicia()' class='btn btn-primary btn-sm'>DEJAR JUEGO</button>";
 		ventanaFinal += "</div>";
 	
+		var imagenGameOver = "<img src='./images/gameover.jpg' class='img-responsive'/>";
 	
+	
+	
+	document.getElementById('areaPLay').innerHTML=imagenGameOver;
 	document.getElementById('preguntasConOruga').innerHTML=ventanaFinal;
 	
 	
@@ -562,6 +565,8 @@ function finalGame(){
 function volverJugar (){
 			var nuevaCapaFinal = document.getElementById('preguntasConOruga');
 			nuevaCapaFinal.setAttribute("class","");
+			nuevaCapaFinal.innerHTML ="";
+			document.getElementById('areaPLay').innerHTML = "<div class='mapa' id='tablero' name='tablero'></div>";
 			vidasAlicia = 3;
 			creaTablero ();
 
@@ -569,9 +574,12 @@ function volverJugar (){
 
 
 
-function cerrarJuegoAlicia(){
-		alert("si cierro");
-		ventanaJuegoAlicia.close();
+function cerrarJuegoAlicia (){
+		var pantallafinal="";
+		pantallafinal += "<img src='./images/finaldeljuego.jpg' class='imagenPortada'/>";
+		pantallafinal += "<a href='./index.html' class='btn btn-primary btn-lg'>VOLVER A JUGAR</a>";
+		window.opener.document.getElementById('imgfinalGame').innerHTML = pantallafinal;
+		this.window.close();
 	}
 
 

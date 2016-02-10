@@ -5,7 +5,7 @@
 	var vidasAlicia = 1;
 	var colisionDetectada =false;
 	var tamanoCelda = 65;
-	var ventanaJuegoAlicia;
+	
 
 
 function creaTablero (){
