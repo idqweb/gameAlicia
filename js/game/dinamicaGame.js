@@ -71,6 +71,11 @@ function moverAlicia (movimiento){
 							document.getElementById('whereIsGato').className = "gato";//mando a la class="gato" a otro punto para que siga en juego
 							
 						}
+						else if (document.getElementById(parseInt(posicionXdeAlicia+1)+","+parseInt(posicionYdeAlicia)).className == "espejo"){
+							
+							colisionGeneral ("espejo",posicionXdeAlicia-1,posicionYdeAlicia);
+							
+						}
 						else{
 							document.getElementById(posicionActualAlicia).className = "camino";
 							document.getElementById(parseInt(posicionXdeAlicia+1)+","+parseInt(posicionYdeAlicia)).className = "alicia";
@@ -111,6 +116,11 @@ function moverAlicia (movimiento){
 							document.getElementById('whereIsAlicia').className = "alicia";//mando a la class="alicia" a otro punto para que siga en juego
 							document.getElementById('whereIsGato').className = "gato";//mando a la class="gato" a otro punto para que siga en juego
 						}
+						else if (document.getElementById(parseInt(posicionXdeAlicia-1)+","+parseInt(posicionYdeAlicia)).className == "espejo"){
+							
+							colisionGeneral ("espejo",posicionXdeAlicia-1,posicionYdeAlicia);
+							
+						}
 							
 						else{
 							document.getElementById(posicionActualAlicia).className = "camino";
@@ -145,7 +155,11 @@ function moverAlicia (movimiento){
 							document.getElementById('whereIsAlicia').className = "alicia";//mando a la class="alicia" a otro punto para que siga en juego
 							document.getElementById('whereIsGato').className = "gato";//mando a la class="gato" a otro punto para que siga en juego
 						}
+						else if (document.getElementById(parseInt(posicionXdeAlicia)+","+parseInt(posicionYdeAlicia-1)).className == "espejo"){
 							
+							colisionGeneral ("espejo",posicionXdeAlicia,posicionYdeAlicia-1);
+							
+						}	
 						else{
 							document.getElementById(posicionActualAlicia).className = "camino";
 							document.getElementById(parseInt(posicionXdeAlicia)+","+parseInt(posicionYdeAlicia-1)).className = "alicia";
@@ -175,6 +189,11 @@ function moverAlicia (movimiento){
 							colisionGeneral ("gato",posicionXdeAlicia,posicionYdeAlicia+1);
 							document.getElementById('whereIsAlicia').className = "alicia";//mando a la class="alicia" a otro punto para que siga en juego
 							document.getElementById('whereIsGato').className = "gato";//mando a la class="gato" a otro punto para que siga en juego
+						}
+						else if (document.getElementById(parseInt(posicionXdeAlicia)+","+parseInt(posicionYdeAlicia+1)).className == "espejo"){
+							
+							colisionGeneral ("espejo",posicionXdeAlicia,posicionYdeAlicia+1);
+							
 						}
 							
 						else{
@@ -469,8 +488,18 @@ function colisionGeneral (tipoObjeto,x,y){
 	}
 	else if (tipodeObjetoEnColision == "gato"){
 		document.getElementById(parseInt(posicionXdeLaColision)+","+posicionYdeLaColision).className = "aliciaGato";
-		
-		
+	}
+	else if(tipodeObjetoEnColision == "espejo"){
+		if (llave == true){
+			youWin ();
+		}
+		else{
+			vidasAlicia = vidasAlicia -1; // si chocas contra el espejo sin la llave pierdes vida
+			if (vidasAlicia == 0)
+				finalGame();
+			
+			creaTablero (); 
+		}
 	}
 	
 }
@@ -535,7 +564,7 @@ function volverAlTablero(personaje,conversa){
 		document.getElementById('whereIsGato').className = "";
 	}
 	else if (perso == "oruga" && conversacion == "nadie"){
-		document.getElementById("0,9").className = "oruga";
+		document.getElementById("0,7").className = "oruga";
 		document.getElementById('whereIsAlicia').className = "";
 		
 	}

@@ -19,7 +19,13 @@
 <body >
 	
 <script>
- 	ventanaJuegoAlicia = window.open("./juego-alicia.html","Juego Alicia","directories=no, location=no, menubar=no, scrollbars=no, statusbar=no, tittlebar=no, width=1124, height=950");
+	
+	var ventana_ancho = $(document).width();
+	var ventana_alto = $(document).height();
+	// Detecta el tamaño de la ventana del navegador y adaptamos la ventana emergente a esos valores
+	
+	
+ 	ventanaJuegoAlicia = window.open("./juego-alicia.html","Juego Alicia",'directories=no, location=no, menubar=no, scrollbars=no, statusbar=no, tittlebar=no,width='+ventana_ancho+', height='+ventana_alto);
 	
 </script>
 

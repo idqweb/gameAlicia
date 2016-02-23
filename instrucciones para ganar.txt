@@ -1,0 +1,12 @@
+La secuencia correcta para ganar es:
+- hablar con gato (colisionar contra el ocupar su casilla)
+-dejar de hablar con gato (enter)
+-ir hacia oruga (cursor hacia abajo)
+- devolver gato (control)
+-hablar con oruga (colisionar oruga)
+-Responder todas las preguntas correctamente consigues llave
+-dejar de hablar con oruga (enter)
+-hablar con gato(colisionar contra el)
+-dejar de hablar con gato (enter)
+- devolver a gato (control)
+- colisionar con el espejo.

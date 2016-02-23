@@ -19,10 +19,28 @@ function questions(){
 }
 
 
+function acierto (){
+	var textoVictoria = document.getElementById('preguntasConOruga');
+	textoVictoria.setAttribute("class","aliciaOrugaQuestions");
+	var victoria ="<div class='preguntas'>";
+		victoria += "<h5>!!EnhoraBuena has ACERTADO!!</h5>"
+		victoria += "Ya dispones de <img src='./images/key.png' width='40px' height='40px' />"
+		victoria+= "<button onclick='respuestaQuestion(3)' class='btn btn-primary btn-sm'>Continuar</button>";
+		victoria += "</div>";
+	
+	
+	document.getElementById('preguntasConOruga').innerHTML=victoria;
+	
+	
+}
+
+
+
+
 function respuestaQuestion(opcion){
 	
 	if (opcion == 1)
-		alert("Acertaste");
+		acierto();
 	
 	if (opcion == 2){
 		vidasAlicia = vidasAlicia -1;
@@ -32,6 +50,16 @@ function respuestaQuestion(opcion){
 			
 			creaTablero ();
 	}
+	
+	if(opcion == 3){
+		var textoVictoria = document.getElementById('preguntasConOruga');
+		
+		textoVictoria.removeChild(textoVictoria.firstChild); //elimina el hijo donde salen las preguntas
+		textoVictoria.setAttribute("class","");
+		llave = true;
+	}
+	
+	
 }
 
 

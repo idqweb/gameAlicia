@@ -2,10 +2,10 @@
 
 	var tableroFilasTotales = 8;
 	var tableroColumnasTotales = 16;
-	var vidasAlicia = 1;
+	var vidasAlicia = 3;
 	var colisionDetectada =false;
 	var tamanoCelda = 65;
-	
+	var llave = false; // no dispones de la llave
 
 
 function creaTablero (){
@@ -31,7 +31,7 @@ function creaTablero (){
 	var vidasEnPantalla = vidasAlicia;
 	document.getElementById('numeroVidas').innerHTML=vidasEnPantalla;
 	
-	
+	llave = false;
 	colisionDetectada =false;
 	
 }
