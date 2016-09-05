@@ -1,1 +1,3 @@
-Pretende ser un juego basico de tablero.
+Execise the Javascript for 2 DAW.<br/>
+
+It is a simple board game.
